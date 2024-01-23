@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__logo{
+    display: flex;
+    align-items: center;
+    &::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    margin-left: 16px;
+    background-color: $color-line;
+    }
+  }
+}

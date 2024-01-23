@@ -15,4 +15,7 @@ margin: 0 auto;
 body {
   font-family: $font-main;
 }
-
+.wrapper {
+  margin: 20px 16px 0;
+  max-width: $mobile-width;
+}
