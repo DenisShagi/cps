@@ -102,12 +102,11 @@
 }
 
 .back-img {
-  background-image: url(/cps/photo.jpg);
+
   width: 100%;
   min-height: 260px;
   margin-top: 15px;
-  background-repeat: no-repeat;
-  background-size: contain;
+
    @media screen and (min-width: 500px) {
     background-size: cover;
     margin-bottom: 15px;
