@@ -339,7 +339,7 @@ p {
 }
 
 .back-img {
-  background: url("../img/_MG_3223.jpg");
+  background-image: url("../img/photo.jpg");
   width: 100%;
   min-height: 260px;
   margin-top: 15px;
