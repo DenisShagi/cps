@@ -1,4 +1,14 @@
 .services {
+  background-color: $bg-color;
+  &-wrapper {
+      padding: 20px 16px 0;
+      @media screen and (min-width: $tablet-width) {
+        padding: 24px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        padding: 0 34px 34px 34px;
+      }
+  }
   &__row {
     display: flex;
     align-items: center;
@@ -45,9 +55,45 @@
 .btn-content {
   margin-top: 16px;
 }
-.services-review__img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 15px 0 20px 0;
+.services-review {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet-width) {
+      max-width: 312px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      max-width: 490px;
+    }
+  }
+  &__title--display {
+    display: none; 
+    @media screen and (min-width: $desktop-width) {
+      display: inline-block;
+    }
+  }
+}
+
+.back-img {
+  background-image: url('/img/_MG_3223.jpg');
+  width: 100%;
+  min-height: 260px;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+   @media screen and (min-width: 500px) {
+    background-size: cover;
+    margin-bottom: 15px;
+   }
+   @media screen and (min-width: $tablet-width) {
+    max-width: 360px;
+    max-height: 260px;
+    margin: 0 0 15px 48px;
+   }
 }

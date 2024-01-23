@@ -2,17 +2,44 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  &__logo{
+
+  &__items {
     display: flex;
-    align-items: center;
-    &::after {
+    gap: 16px;
+  &::before {
     content: '';
     display: inline-block;
     width: 2px;
     height: 32px;
-    margin-left: 16px;
     background-color: $color-line;
     }
   }
+  &__item1 {
+    display: none;
+    @media screen and (min-width: $tablet-width) {
+    display: flex;
+    gap: 16px;
+  }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @media screen and (min-width: $tablet-width) {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: $color-line;
+      }
+    }
+  }
+
+  &__item2 {
+    display: flex;
+    gap: 16px;
+  }
 }
+
