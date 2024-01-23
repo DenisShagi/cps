@@ -339,7 +339,7 @@ p {
 }
 
 .back-img {
-  background-image: url('../sass/img/photo.jpg');
+  background-image: url(../img/photo.jpg);
   width: 100%;
   min-height: 260px;
   margin-top: 15px;
