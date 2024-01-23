@@ -13,7 +13,28 @@
     display: flex;
     align-items: center;
     margin-top: 24px;
+    @media screen and (min-width: $desktop-width) {
+      margin-top: 0;
+      padding-top: 42px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &--right {
+      display: none;
+      @media screen and (min-width: $desktop-width) {
+        display: flex;
+      }
+
+    }
+    &--item {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      gap: 16px;
+    }
   }
+  
   &__item {
     position: absolute;
     left: 0;

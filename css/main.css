@@ -168,6 +168,11 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+}
 .header__items {
   display: flex;
   gap: 16px;
@@ -178,6 +183,11 @@ p {
   width: 2px;
   height: 32px;
   background-color: #EAEAEA;
+}
+.header__items--row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header__item1 {
   display: none;
@@ -206,6 +216,9 @@ p {
   display: flex;
   gap: 16px;
 }
+.header__item3 {
+  display: none;
+}
 
 .services {
   background-color: #F8F8F8;
@@ -227,6 +240,29 @@ p {
   display: flex;
   align-items: center;
   margin-top: 24px;
+}
+@media screen and (min-width: 1120px) {
+  .services__row {
+    margin-top: 0;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+.services__row--right {
+  display: none;
+}
+@media screen and (min-width: 1120px) {
+  .services__row--right {
+    display: flex;
+  }
+}
+.services__row--item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  gap: 16px;
 }
 .services__item {
   position: absolute;
