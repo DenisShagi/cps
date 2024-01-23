@@ -1,0 +1,53 @@
+.services {
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+  &__item {
+    position: absolute;
+    left: 0;
+  }
+  &__title {
+    margin-left: 12px;
+  }
+}
+
+.navigation {
+  margin: 32px 0;
+  &__list {
+    display: flex;
+    align-items: center ;
+    overflow-x: auto;
+    margin-left: 32px;
+    gap: 20px;
+    height: 42px;
+  }
+  &__item {
+    white-space: nowrap;
+  }
+  &__link {
+    &:focus {
+      border-radius: 6px;
+      border: 2px solid $border-color;
+      padding: 8px 9px 8px 16px;
+      outline: none;
+    }
+
+    &--text {
+      @include font($weight: 500, $height: 24px, $size: 16px);
+      letter-spacing: -0.2px;
+      color: $color-link;
+    }
+  }
+}
+
+.btn-content {
+  margin-top: 16px;
+}
+.services-review__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 15px 0 20px 0;
+}

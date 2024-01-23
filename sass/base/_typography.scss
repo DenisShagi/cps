@@ -1,0 +1,11 @@
+h1 {
+  @include font ($weight: 700, $size: 28px, $height: 40px);
+  letter-spacing: -0.6px;
+}
+h2 {
+  &--color-text {
+    @include font ($style: normal, $size: 14px, $height: 18px);
+    letter-spacing: 0.2px;
+    color: $color-text;
+  }
+}

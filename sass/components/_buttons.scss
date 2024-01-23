@@ -1,0 +1,9 @@
+.button {
+  display: flex;
+  align-items: center;
+  &__text {
+    margin-left: 8px;
+    @include font($weight: 500, $size: 16px, $height: 24px);
+    letter-spacing: -0.2px;
+  }
+}
