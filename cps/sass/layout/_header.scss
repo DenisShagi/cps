@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
+  &__items {
+    display: flex;
+    gap: 16px;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 32px;
+    background-color: $color-line;
+    }
+
+    &--row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &__item1 {
+    display: none;
+    @media screen and (min-width: $tablet-width) {
+    display: flex;
+    gap: 16px;
+  }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @media screen and (min-width: $tablet-width) {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 32px;
+        background-color: $color-line;
+      }
+    }
+  }
+
+  &__item2 {
+    display: flex;
+    gap: 16px;
+
+  }
+  
+  &__item3 {
+    display: none;
+  }
+}
+
