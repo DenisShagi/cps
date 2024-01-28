@@ -357,6 +357,7 @@ p {
   position: relative;
   display: inline-block;
   background-size: cover;
+  max-width: 530px;
   min-height: 260px;
   margin-top: 15px;
 }
