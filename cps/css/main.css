@@ -109,6 +109,16 @@ h1 {
   line-height: 40px;
   letter-spacing: -0.6px;
 }
+h1::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border-radius: 20px;
+}
 
 .p2 {
   font-style: normal;
@@ -276,10 +286,6 @@ p {
   align-items: center;
   margin-right: 10px;
   gap: 16px;
-}
-.services__item {
-  position: absolute;
-  left: 0;
 }
 .services__title {
   margin-left: 12px;

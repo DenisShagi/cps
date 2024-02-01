@@ -1,6 +1,16 @@
 h1 {
   @include font ($weight: 700, $size: 28px, $height: 40px);
   letter-spacing: -0.6px;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    background-color: $h1-color-line;
+    border-radius: 20px;
+  }
 }
 .p2 {
     @include font ($style: normal, $size: 14px, $height: 18px);
