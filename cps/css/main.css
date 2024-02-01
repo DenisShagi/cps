@@ -110,22 +110,22 @@ h1 {
   letter-spacing: -0.6px;
 }
 
-h2 {
+.p2 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
 }
-h2--color-text {
+.p2--color-text {
   color: #1B1C21;
 }
 
-h3 {
+.p3 {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  h3 {
+  .p3 {
     display: inline-block;
     margin-top: 20px;
     font-style: normal;
@@ -179,6 +179,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 1120px) {
   .header {

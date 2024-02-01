@@ -2,14 +2,14 @@ h1 {
   @include font ($weight: 700, $size: 28px, $height: 40px);
   letter-spacing: -0.6px;
 }
-h2 {
+.p2 {
     @include font ($style: normal, $size: 14px, $height: 18px);
     letter-spacing: 0.2px;
   &--color-text {
     color: $color-text;
   }
 }
-h3 {
+.p3 {
   display: none;
   @media screen and (min-width: $tablet-width) {
     display: inline-block;
