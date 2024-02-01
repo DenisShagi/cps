@@ -351,19 +351,13 @@ p {
 }
 
 .back-img {
-  background-image: url("../../cps/photo.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
-  display: inline-block;
-  background-size: cover;
   max-width: 530px;
   min-height: 260px;
   margin-top: 15px;
 }
 @media screen and (min-width: 500px) {
   .back-img {
-    background-size: cover;
     margin-bottom: 15px;
   }
 }
@@ -371,5 +365,21 @@ p {
   .back-img {
     width: 100%;
     margin: 0 0 15px 48px;
+  }
+}
+.back-img__img {
+  width: 530px;
+  height: 307px;
+}
+@media screen and (max-width: 768px) {
+  .back-img__img {
+    width: 360px;
+    height: 208px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .back-img__img {
+    width: 320px;
+    height: 230px;
   }
 }/*# sourceMappingURL=main.css.map */
